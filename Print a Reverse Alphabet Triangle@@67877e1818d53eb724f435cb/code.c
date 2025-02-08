@@ -6,9 +6,9 @@ int main()
     scanf("%d",&n);
     for(i=1;i<=n;i++){
         m='A';
-        for(j=1;j<=n;j++){
+        for(j=n;j>=i;j--){
             printf("%c ",m);
-            m--;
+            m++;
         }
         printf("\n");
     }
