@@ -7,10 +7,10 @@ int main()
         printf("Divisible by Both");
     }
     else if(a%5==0){
-        printf("Divisible by 3");
+        printf("Divisible by 5");
     }
     else if(a%3==0){
-        printf("Divisible by 11");
+        printf("Divisible by 3");
     }
     else{
         printf("Not Divisible");
