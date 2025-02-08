@@ -7,7 +7,7 @@ int main()
         for(j=1;j<=n-i;++j){
            printf(" ");
         }
-       while(k!=2*i-1){
+       while(k!=2*i){
         printf("*");
         ++k;
        }
