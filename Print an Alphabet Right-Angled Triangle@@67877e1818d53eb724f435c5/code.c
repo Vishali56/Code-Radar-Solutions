@@ -2,8 +2,8 @@
 int main()
 {
     int i,j,n;
-    char m
-    scanf("%c",&n);
+    char m;
+    scanf("%d",&n);
     for(i=1;i<=n;i++){
         m='A';
         for(j=1;j<=i;j++){
