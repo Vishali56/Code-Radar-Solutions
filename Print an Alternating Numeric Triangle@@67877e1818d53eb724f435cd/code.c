@@ -1,11 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,sum=0;
+    int i,n,j;
     scanf("%d",n);
     for(i=1;i<=n;i++){
-        sum+=i;
+      for(j=1;j<=i;j++){
+         if((j+i)%2==0){
+            printf("1 ");
+         }
+         else{
+            printf("0 ");
+         }
+      }
+      printf("\n");
     }
-    printf("%d",sum);
     return 0;
 }
