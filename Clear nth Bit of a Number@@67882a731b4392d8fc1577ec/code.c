@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,k,result;
-    scanf("%d",&n);
-    result = (n & (~(1 << (k-1))));
-    printf("%d",result);
+    int n,b,result;
+    scanf("%d %d",&n,&b);
+    result=(1<<b);
+    n = n & (~result);
+    printf("%d",n);
     return 0;
 }
