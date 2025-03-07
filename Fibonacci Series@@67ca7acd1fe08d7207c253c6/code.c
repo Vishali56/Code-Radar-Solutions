@@ -1,9 +1,9 @@
 #include<stdio.h>
 void fibonacciSeries(int n){
-    int first=0,second=1,next,i,n;
-    printf("fibonacci series:");
+    int first=0,second=1,next,i;
+    printf("fibonacci series: ");
     for(i=0;i<n;i++){
-       printf("%d",first);
+       printf("%d", first);
        next=first+second;
        first=second;
        second=next;
