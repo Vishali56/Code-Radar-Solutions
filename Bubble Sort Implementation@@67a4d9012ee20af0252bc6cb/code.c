@@ -1,23 +1,26 @@
 #include<stdio.h>
-int main(){
-    int n;
+int main()
+{
+    int i,j,n,temp;
+    printf("enter value of n:");
     scanf("%d",&n);
-    int m[n];
-    for (int i=0;i<n;i++){
-        scanf("%d",&m[i]);
+    int arr[n];
+    printf("enter elements:");
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-    int r,c,t;
-    for (r=0;r<n;r++){
-        for(c=0;c<n-1-r;c++){
-            if (m[c]>m[c+1]){
-                t=m[c];
-                m[c]=m[c+1];
-                m[c+1]=t;
-            }
+for(i=0;i<n-1;i++){
+    for(j=0;j<n-i-1;j++){
+        if(arr[j]>arr[j+1]){
+            temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
         }
     }
-    printf("Sorted array\n");
-    for(int i=0;i<n;i++){
-    printf("%d\n",m[i]);
-    }
+}
+printf("sorted array:");
+for(i=0;i<n;i++){
+    printf("%d ",arr[i]);
+}
+return 0;
 }
