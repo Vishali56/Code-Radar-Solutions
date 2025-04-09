@@ -1,16 +1,17 @@
-#include<stdio.h>
-int main()
-{
-    int i,n,arr[n];
-    scanf("%d\n",&n);
-    for(i=0;i<n;i++){
-         scanf("%d",&arr[n]);
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    if (ascending) {
-        return Sorted;
-    } else if (descending) {
-        return -1;
-    } else {
-        return 0; 
+    for (int i = 0; i < n - 1; i++) {  
+        if (arr[i] > arr[i + 1]) {  // Only check if it decreases
+            printf("Not Sorted\n");
+            return 0;  
+        }
     }
+    printf("Sorted\n");  // If loop completes, it's sorted
+    return 0;
 }
