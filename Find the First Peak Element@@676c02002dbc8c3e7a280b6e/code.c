@@ -13,9 +13,10 @@ int main()
             count = 1;
             break;
         }
+
          if(count==0){
         printf("-1");
     }
-    
+    } 
     return 0;
 }
