@@ -13,7 +13,7 @@ int main()
             break;
         }
     }
-    if(flag==0){
+    if(count==0){
         return -1;
     }
     return 0;
