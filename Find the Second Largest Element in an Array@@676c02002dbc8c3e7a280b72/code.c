@@ -24,6 +24,7 @@ int main() {
     } else {
         printf("%d\n", secondLargest);
     }
+    }
     return 0;
 }
-}
+
