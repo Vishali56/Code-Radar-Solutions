@@ -21,6 +21,7 @@ int main() {
     if (secondLargest == -2147483648) {
         // If second largest wasn't updated, print -1
         printf("-1\n");
+        break;
     } else {
         printf("%d\n", secondLargest);
     }
